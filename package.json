@@ -1,40 +1,33 @@
 {
-  "name": "modcraft-static-site",
-  "version": "1.0.0",
   "private": true,
-  "description": "modcraft-static-site",
-  "author": "tcramer217",
-  "keywords": [
-    "gatsby"
-  ],
+  "name": "Modcraft",
+  "description": "A Family-friends Modded Minecraft Experience",
+  "version": "0.0.1",
+  "author": "TCramer217",
+  "license": "0BSD",
+  "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
-    "develop": "node_modules/.bin/gatsby develop",
-    "start": "node_modules/.bin/gatsby develop",
-    "build": "node_modules/.bin/gatsby build",
-    "serve": "node_modules/.bin/gatsby serve",
-    "clean": "node_modules/.bin/gatsby clean",
-    "typecheck": "node_modules/.bin/tsc --noEmit"
+    "build": "gatsby-starter-portfolio-cara/node_modules/.bin/gatsby build",
+    "develop": "gatsby-starter-portfolio-cara/node_modules/.bin/gatsby develop",
+    "develop:cypress": "gatsby-starter-portfolio-cara/node_modules/.bin/cross-env CYPRESS_SUPPORT=y yarn develop",
+    "build:cypress": "gatsby-starter-portfolio-cara/node_modules/.bin/cross-env CYPRESS_SUPPORT=y yarn build",
+    "start": "gatsby-starter-portfolio-cara/node_modules/.bin/gatsby develop",
+    "serve": "gatsby-starter-portfolio-cara/node_modules/.bin/gatsby serve",
+    "clean": "gatsby-starter-portfolio-cara/node_modules/.bin/gatsby clean"
   },
   "dependencies": {
-    "@mdx-js/react": "^2.3.0",
-    "gatsby": "^5.11.0",
-    "gatsby-plugin-google-gtag": "^5.11.0",
-    "gatsby-plugin-image": "^3.11.0",
-    "gatsby-plugin-manifest": "^5.11.0",
-    "gatsby-plugin-mdx": "^5.11.0",
-    "gatsby-plugin-sass": "^6.11.0",
-    "gatsby-plugin-sharp": "^5.11.0",
-    "gatsby-plugin-sitemap": "^6.11.0",
-    "gatsby-source-filesystem": "^5.11.0",
-    "gatsby-transformer-sharp": "^5.11.0",
+    "@lekoarts/gatsby-theme-cara": "^5.0.5",
+    "gatsby": "^5.10.0",
+    "gatsby-plugin-manifest": "^5.10.0",
+    "gatsby-plugin-webpack-statoscope": "^1.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.65.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.3.3",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "typescript": "^5.1.6"
+    "@types/node": "^18.16.16",
+    "@types/react": "^18.2.9",
+    "@types/react-dom": "^18.2.4",
+    "cross-env": "^7.0.3",
+    "typescript": "^4.9.5"
   }
 }
