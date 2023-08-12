@@ -1,38 +1,40 @@
 {
-  "name": "modcraft-static",
-  "version": "0.1.0",
+  "name": "modcraft-static-site",
+  "version": "1.0.0",
   "private": true,
+  "description": "modcraft-static-site",
+  "author": "tcramer217",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "node_modules/.bin/gatsby develop",
+    "start": "node_modules/.bin/gatsby develop",
+    "build": "node_modules/.bin/gatsby build",
+    "serve": "node_modules/.bin/gatsby serve",
+    "clean": "node_modules/.bin/gatsby clean",
+    "typecheck": "node_modules/.bin/tsc --noEmit"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@mdx-js/react": "^2.3.0",
+    "gatsby": "^5.11.0",
+    "gatsby-plugin-google-gtag": "^5.11.0",
+    "gatsby-plugin-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^5.11.0",
+    "gatsby-plugin-mdx": "^5.11.0",
+    "gatsby-plugin-sass": "^6.11.0",
+    "gatsby-plugin-sharp": "^5.11.0",
+    "gatsby-plugin-sitemap": "^6.11.0",
+    "gatsby-source-filesystem": "^5.11.0",
+    "gatsby-transformer-sharp": "^5.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "sass": "^1.65.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "typescript": "^5.1.6"
   }
 }
