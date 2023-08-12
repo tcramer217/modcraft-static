@@ -7,13 +7,13 @@
   "license": "0BSD",
   "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
-    "build": "gatsby-starter-portfolio-cara/node_modules/.bin/gatsby build",
-    "develop": "gatsby-starter-portfolio-cara/node_modules/.bin/gatsby develop",
-    "develop:cypress": "gatsby-starter-portfolio-cara/node_modules/.bin/cross-env CYPRESS_SUPPORT=y yarn develop",
-    "build:cypress": "gatsby-starter-portfolio-cara/node_modules/.bin/cross-env CYPRESS_SUPPORT=y yarn build",
-    "start": "gatsby-starter-portfolio-cara/node_modules/.bin/gatsby develop",
-    "serve": "gatsby-starter-portfolio-cara/node_modules/.bin/gatsby serve",
-    "clean": "gatsby-starter-portfolio-cara/node_modules/.bin/gatsby clean"
+    "build": "node_modules/.bin/gatsby build",
+    "develop": "node_modules/.bin/gatsby develop",
+    "develop:cypress": "node_modules/.bin/cross-env CYPRESS_SUPPORT=y yarn develop",
+    "build:cypress": "node_modules/.bin/cross-env CYPRESS_SUPPORT=y yarn build",
+    "start": "node_modules/.bin/gatsby develop",
+    "serve": "node_modules/.bin/gatsby serve",
+    "clean": "node_modules/.bin/gatsby clean"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^5.0.5",
